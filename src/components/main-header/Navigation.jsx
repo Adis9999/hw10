@@ -50,6 +50,9 @@ const Navigation = ({ isLoggedIn, navigateToUser ,onLogOut}) => {
   return (
     <Nav>
       <ul>
+      <li onClick={(e)=>navigateToUser(e,"counter")}>
+          <a href="/">Counter</a>
+        </li>
         <li onClick={(e)=>navigateToUser(e,"users")}>
           <a href="/">Users</a>
         </li>
@@ -59,6 +62,7 @@ const Navigation = ({ isLoggedIn, navigateToUser ,onLogOut}) => {
         <li onClick={(e)=>navigateToUser(e,"cards")}>
           <a href="/">Rick and Morty</a>
         </li>
+        
         <li>
           <button onClick={onLogOut}>Logout</button>
         </li>
